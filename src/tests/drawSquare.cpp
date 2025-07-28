@@ -1,6 +1,6 @@
 #include <iostream>
-#include "SDL2/SDL.h"
-#include "GL/glew.h"
+#include "/Users/tommasob/Desktop/GFXTests/include/SDL2/SDL.h"
+#include "/Users/tommasob/Desktop/GFXTests/include/GL/glew.h"
 
 #ifdef __APPLE__
 #include <OpenGL/gl.h>
@@ -113,9 +113,6 @@ int main()
 
         glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
         glEnableVertexAttribArray(0);
-
-        glBindBuffer(GL_ARRAY_BUFFER, 0);
-        glBindVertexArray(0);
 
         SDL_Event event;
         is_game_running = true;
