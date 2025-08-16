@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(OpenGLExample)
 
 set(CMAKE_CXX_STANDARD 11)
-set(SOURCE_FILES main.cpp glad/src/glad.c)
+set(SOURCE_FILES main.cpp glad/src/glad.c shaderUtil.h)
 
 # Find OpenGL
 find_package(OpenGL REQUIRED)
